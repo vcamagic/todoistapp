@@ -1,14 +1,12 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import {
   FaChevronDown,
   FaChevronRight,
   FaInbox,
-  FaRegCalendarAlt,
   FaRegCalendar,
+  FaRegCalendarAlt,
 } from "react-icons/fa";
 import { useSelectedProjectsValue } from "../../context";
-import { generatePushId } from "../../helpers";
 import { AddProject } from "../AddProject";
 import { Projects } from "../Projects";
 
@@ -27,6 +25,12 @@ export const Sidebar = () => {
             setActive("inbox");
             setSelectedProject("INBOX");
           }}
+          onKeyDown={() => {
+            setActive("inbox");
+            setSelectedProject("INBOX");
+          }}
+          tabIndex={0}
+          role="button"
         >
           <span>
             <FaInbox />
@@ -40,6 +44,12 @@ export const Sidebar = () => {
             setActive("today");
             setSelectedProject("TODAY");
           }}
+          onKeyDown={() => {
+            setActive("today");
+            setSelectedProject("TODAY");
+          }}
+          tabIndex={0}
+          role="button"
         >
           <span>
             <FaRegCalendar />
@@ -53,6 +63,12 @@ export const Sidebar = () => {
             setActive("next_7");
             setSelectedProject("NEXT_7");
           }}
+          onKeyDown={() => {
+            setActive("next_7");
+            setSelectedProject("NEXT_7");
+          }}
+          tabIndex={0}
+          role="button"
         >
           <span>
             <FaRegCalendarAlt />

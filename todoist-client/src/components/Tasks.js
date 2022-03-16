@@ -8,7 +8,7 @@ import { AddTask } from "./AddTask";
 
 export const Tasks = () => {
   const { selectedProject } = useSelectedProjectsValue();
-  const { projects } = useProjectsValue(selectedProject);
+  const { projects } = useProjectsValue();
   const { tasks } = useTasks(selectedProject);
 
   let projectName = "";
