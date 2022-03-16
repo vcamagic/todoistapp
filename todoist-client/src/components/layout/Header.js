@@ -36,9 +36,8 @@ export const Header = ({ darkMode, setDarkMode }) => {
                 type="button"
                 onClick={() => setDarkMode(!darkMode)}
                 onKeyDown={(e) => {
-                  if (e.keyCode !== 13)
-                    return;
-                   setDarkMode(!darkMode);
+                  if (e.keyCode !== 13) return;
+                  setDarkMode(!darkMode);
                 }}
               >
                 <FaPizzaSlice />

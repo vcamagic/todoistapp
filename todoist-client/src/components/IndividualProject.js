@@ -43,12 +43,14 @@ export const IndividualProject = ({ project }) => {
               >
                 Delete
               </button>
-              <span 
-              onClick={() => setShowConfirm(!showConfirm)}
-              onKeyDown={() => setShowConfirm(!showConfirm)}
-              tabIndex={0}
-              role="button"
-              >Cancel</span>
+              <span
+                onClick={() => setShowConfirm(!showConfirm)}
+                onKeyDown={() => setShowConfirm(!showConfirm)}
+                tabIndex={0}
+                role="button"
+              >
+                Cancel
+              </span>
             </div>
           </div>
         )}

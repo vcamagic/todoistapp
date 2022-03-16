@@ -5,7 +5,7 @@ export const Checkbox = ({ id }) => {
   const archiveTask = () => {
     firebase.firestore().collection("tasks").doc(id).update({ archived: true });
   };
-  
+
   return (
     <div
       className="checkbox-holder"
