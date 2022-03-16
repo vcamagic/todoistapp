@@ -79,6 +79,9 @@ export const Sidebar = () => {
       <div
         className="sidebar__middle"
         onClick={() => setShowProjects(!showProjects)}
+        onKeyDown={() => setShowProjects(!showProjects)}
+        role="button"
+        tabIndex={0}
       >
         <span className={!showProjects ? "hidden-projects" : undefined}>
           {showProjects ? <FaChevronDown /> : <FaChevronRight />}
