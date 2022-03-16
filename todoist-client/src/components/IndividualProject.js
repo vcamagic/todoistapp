@@ -1,11 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaTrashAlt } from "react-icons/fa";
-import {
-  useProjectsValue,
-  useSelectedProjectsValue,
-  useSelectedProjectVaule,
-} from "../context";
+import { useProjectsValue, useSelectedProjectsValue } from "../context";
 import { firebase } from "../firebase";
 
 export const IndividualProject = ({ project }) => {

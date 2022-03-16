@@ -4,6 +4,7 @@ import { Checkbox } from "./Checkbox";
 import { collatedTasks } from "../constants";
 import { getTitle, getCollatedTitle, collatedTasksExist } from "../helpers";
 import { useSelectedProjectsValue, useProjectsValue } from "../context";
+import { AddTask } from "./AddTask";
 
 export const Tasks = () => {
   const { selectedProject } = useSelectedProjectsValue();
@@ -27,7 +28,7 @@ export const Tasks = () => {
   return (
     <div className="tasks" data-testid="tasks">
       <h2 data-testid="project-name">{projectName}</h2>
-
+      <AddTask />
       <ul className="tasks__list">
         {tasks.map((task) => (
           <li key={`${task.id}`}>
